@@ -1,6 +1,7 @@
-let arr = [1,1,2,4,4,6,8,8,6];
+let arr = [1,1,2,4,7,4,6,8,8,6,7];
 let num = findNum(arr);
-console.log(num);
+console.log("数组是："+arr);
+console.log("只出现一次的数字是："+num);
 function findNum(arr) {
     let result = []; // [{key:a, count :3}]
     let findnumber = 0;
