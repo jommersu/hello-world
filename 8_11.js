@@ -1,7 +1,8 @@
 let str = "1->2->3->3->4->5->3";
 let val = 3;
 let chain = delete_three(str);
-console.log(chain);
+console.log("原始链表：" + str);
+console.log("删除链表中的3：" + chain);
 function delete_three(str,val){
     let result_chain = "";
     let result_arr = [];
