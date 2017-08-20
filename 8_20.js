@@ -25,5 +25,9 @@ function count(str) {
     if(!result2.find( ele => ele === obj)){
         result2.push(obj);
     };
-    return result2;
+    let resultObj = {};
+    result2.forEach( item => {
+        resultObj[item.key] = item.count;
+    });
+    return resultObj;
 }
