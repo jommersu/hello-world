@@ -12,15 +12,12 @@ function count(str) {
     });
     let result2 = [];
     let obj = result.reduce( (a,b) => {
-       if(a.count > b.count) {
-           return a;
-       }else if(a.count < b.count){
-           return b;
-       }else{
-           result2.push(a);
-           result2.push(b);
-           return a;
-       }
+      if(a.count === b.count){
+          result2.push(a,b);
+          return a;
+      }else {
+          return a.count > b.count ? a: b;
+      }
     });
     if(!result2.find( ele => ele === obj)){
         result2.push(obj);
