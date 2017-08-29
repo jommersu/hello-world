@@ -1,3 +1,8 @@
+/*
+
+题目：给出2*n + 1 个的数字(数组)，除其中一个数字之外其他每个数字均出现两次，找到这个数字。
+eg: function findNum(arr){ ... }
+ */
 let arr = [1,1,2,4,7,4,6,8,8,6,7];
 let num = findNum(arr);
 console.log("数组是："+arr);

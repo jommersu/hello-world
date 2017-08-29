@@ -1,3 +1,7 @@
+/*
+给定一个未排序的整数数组，找到其中位数。
+function XXX(arr){}
+ */
 let arr1 = [3,6,2,7,9];
 console.log("数组为：" + arr1);
 let result1 = get_median(arr1);
